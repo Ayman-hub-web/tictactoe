@@ -3,7 +3,7 @@ let currentShape = 'cross';
 let gameOver = false;
 
 function fillShape(id) {
-    if (id == 0 || !fields[id] && !gameOver) {
+    if (!fields[id] && !gameOver) {
         if (currentShape == 'cross') {
             currentShape = 'circle';
             document.getElementById('player-1').classList.remove('opci');
